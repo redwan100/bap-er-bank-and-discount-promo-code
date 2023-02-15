@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>BAAP ER BANK</title>
+  </head>
+  <body class="bg-slate-200">
+    
+    <div class="container mx-auto grid grid-cols-2 bg-white shadow-lg p-5 gap-3 ">
+        <!-- LEFT========== -->
+        <div>
+
+            
+            <div class="bg-white shadow-lg p-3 rounded-md">
+                <p class="text-center text-lg font-semibold">Rose</p>
+             <p class="text-center font-semibold text-2xl uppercase text-emerald-800 mb-2">price: <span id="rose-price">200</span></p>
+            <input id="rose-field" class="w-full outline-none py-1 px-3 border-2 rounded-md border-teal-400 mb-3" type="text" placeholder="type here Quantity">
+            <button id="buy-btn" class="w-full bg-teal-200 text-emerald-700 rounded-md py-1 font-semibold">Buy Now</button>
+           </div>
+
+            <div class="bg-white shadow-lg p-3 rounded-md">
+                <p class="text-center text-lg font-semibold">Chocolate</p>
+             <p class="text-center font-semibold text-2xl uppercase text-emerald-800 mb-2">price:<span id="chocolate-price">100</span></p>
+            <input id="chocolate-field" class="w-full outline-none py-1 px-3 border-2 rounded-md border-teal-400 mb-3" type="text" placeholder="type here Quantity">
+            <button id="buy-btn2" class="w-full bg-teal-200 text-emerald-700 rounded-md py-1 font-semibold">Buy Now</button>
+           </div>
+
+            <div class="bg-white shadow-lg p-3 rounded-md">
+                <p class="text-center text-lg font-semibold">Dairy</p>
+             <p class="text-center font-semibold text-2xl uppercase text-emerald-800 mb-2">price:<span id="dairy-price">200</span></p>
+            <input id="dairy-field" class="w-full outline-none py-1 px-3 border-2 rounded-md border-teal-400 mb-3" type="text" placeholder="type here Quantity">
+            <button id="buy-btn3" class="w-full bg-teal-200 text-emerald-700 rounded-md py-1 font-semibold">Buy Now</button>
+           </div>
+           
+        </div>
+
+        <!-- RIGHT============= -->
+        <div class="p-4 shadow-md">
+            <div class="text-center mb-7">
+                <p class="font-semibold text-xl text-teal-900">Chocolate: <span id="chocolate-price-total">00</span></p>
+                <hr class="bg-teal-500 h-[2px]">
+            </div>
+            <div class="text-center mb-7">
+                <p class="font-semibold text-xl text-teal-900">Rose: <span id="rose-price-total">00</span></p>
+                <hr class="bg-teal-500 h-[2px]">
+            </div>
+            <div class="text-center mb-7">
+                <p class="font-semibold text-xl text-teal-900">Dairy: <span id="dairy-price-total">00</span></p>
+                <hr class="bg-teal-500 h-[2px]">
+            </div>
+            <div class="text-center mb-7">
+                <p class="font-semibold text-xl text-teal-900">Total: <span id="total">00</span></p>
+                <hr class="bg-teal-500 h-[2px]">
+            </div>
+
+            <!-- ================= promo code ============== -->
+            <div class="mt-[2rem]">
+                <p class="bg-teal-100 p-1 rounded-md text-emerald-800 font-bold">Use Promo Code or 10% Discount</p>
+
+                <div class="mt-4">
+                    <input id="promo-code" class="w-full border border-teal-400 rounded-sm py-1 px-2 bg-teal-50 outline-none" type="text" placeholder="101">
+                <!-- ============= ERROR MESSAGE ========== -->
+                     <p class="text-red-500 font-semibold my-2" id="promo-error"></p>
+
+                    <button id="apply-btn" class="border
+                    mt-4 w-full p-1 rounded-md text-teal-900 bg-teal-400 font-bold">Apply</button>
+                </div>
+
+                <div class="mt-3">
+                    <p class="text-xl text-teal-800 font-semibold">All cost: <span id="all-cost">00</span></p>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript link -------------  -->
+    <script src="./discount.js"></script>
+  </body>
+</html>

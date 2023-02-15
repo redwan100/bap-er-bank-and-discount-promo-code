@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>BAAP ER BANK</title>
+  </head>
+  <body class="bg-slate-200">
+    <div class="container mx-auto grid place-content-center h-screen hidden" id="bank-register">
+      <h1 class="text-center text-4xl">Welcome to my bank</h1>
+
+      <form class="max-w-[400px] bg-white p-3 m-5 rounded-md shadow-md">
+        <p class="font-semibold capitalize text-center mb-5 text-2xl ">
+          please login
+        </p>
+        <div class="space-y-3">
+          <input id="login-input"
+            class="w-full bg-slate-200 outline-none py-1 px-3 rounded-sm"
+            type="text"
+            placeholder="Enter your email"
+          />
+          <input id="login-password"
+            class="w-full bg-slate-200 outline-none py-1 px-3 rounded-sm"
+            type="password"
+            placeholder="*****"
+          />
+          <button id="submit-btn"
+            type="submit"
+            class="w-full bg-teal-500 p-1 font-semibold uppercase text-white rounded-sm"
+          >
+            submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- bank details -------------- -->
+    <div id="bank-form" class="container mx-auto grid place-content-center h-screen">
+       <div class="bg-white p-6 rounded-md shadow-md">
+         <h1 class="mb-6 text-center text-3xl">Let's get some <span class=" text-emerald-400 font-semibold text-center">Moooooney</span>!!!</h1>
+
+        <div class="grid grid-cols-3 gap-3">
+            <div class="bg-teal-300 py-2 px-3 rounded-sm shadow-md text-white">
+                <h1 class="text-xl font font-medium mb-1 text-white" >Deposit</h1>
+                <p class="font-medium text-4xl">$<span id="deposit-balance" >00</span></p>
+            </div>
+
+            <div class="bg-orange-300 py-2 px-3 rounded-sm shadow-md text-white">
+                <h1 class="text-xl font font-medium mb-1 text-white" >Withdraw</h1>
+                <p class="font-medium text-4xl">$<span id="withdraw-balance">00</span></p>
+            </div>
+
+            <div class="bg-pink-300 py-2 px-3 rounded-sm shadow-md text-white">
+                <h1 class="text-xl font text-white font-medium mb-1">Balance</h1>
+                <p class="font-medium text-4xl" >$<span id="balance">1200</span></p>
+            </div>
+        </div>
+
+        <div class="mt-10 grid grid-cols-2 gap-4">
+            <!-- deposit------- -->
+            <div class="bg-green-400 p-3 rounded-sm shadow-md">
+                <h1 class="text-2xl mb-3 font-medium text-white">Please Deposit</h1>
+                <input id="deposit-input" class="w-full py-1 px-2 bg-white rounded-sm mb-3 outline-none" type="number"  placeholder="$amount you want to deposit">
+                <button class="bg-blue-600 py-1 px-3 rounded-sm text-white font-semibold w-full" id="deposit-btn">Deposit</button>
+            </div>
+
+            <!-- withdraw---------------- -->
+            <div class="bg-rose-400 p-3 rounded-sm shadow-md">
+                <h1 class="text-2xl mb-3 font-medium text-white">Please Withdraw</h1>
+
+                <input id="withdraw-input" class="w-full py-1 px-2 bg-white rounded-sm mb-3 outline-none" type="number" placeholder="$amount you want to withdraw">
+                
+                <button class="bg-blue-600 py-1 px-3 rounded-sm text-white font-semibold w-full" id="withdraw-btn">Withdraw</button>
+            </div>
+        </div>
+       </div>
+    </div>
+
+
+    <!-- javascript link -------------  -->
+    <script src="./app.js"></script>
+  </body>
+</html>
